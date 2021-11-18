@@ -13,8 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
+    #- name: configure
+    #  run: ./configure
+    #We do not have a configure file as of now
     - name: make
       run: make
     - name: make check
