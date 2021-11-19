@@ -10,7 +10,7 @@ output: main.o incrementer.o
 #whenever main.o or incrementer.o changes we compile them
 
 run:
-	checkcpp main.cpp
+	cppcheck main.cpp
 
 clean:
 	erase *.o output
