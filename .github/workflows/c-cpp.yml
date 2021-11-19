@@ -18,10 +18,6 @@ jobs:
     #We do not have a configure file as of now
     - name: make
       run: make
-    - name: make run cppcheck
-      run: make run
     #- name: make distcheck
     #  run: make distcheck
-    - name: cppcheck-action
-      uses: deep5050/cppcheck-action@v3.0
 
