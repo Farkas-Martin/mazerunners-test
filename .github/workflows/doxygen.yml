@@ -1,1 +1,11 @@
-
+name: Doxygen
+on:
+  push:
+    branches: [main, develop, farkas-martin]
+jobs:
+    build:
+        name: Doxygen use
+        runs-on: ubuntu-latest
+        steps:
+          - name: doxygen include
+            uses: dreygur/doxygen@1.0.1
