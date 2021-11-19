@@ -1,0 +1,17 @@
+main.cpp:11:3: error: Array 'a[10]' accessed at index 10, which is out of bounds. [arrayIndexOutOfBounds]
+ a[10] = 0;
+  ^
+main.cpp:11:8: style: Variable 'a[10]' is assigned a value that is never used. [unreadVariable]
+ a[10] = 0;
+       ^
+src/headers/incrementer.h:5:9: performance:inconclusive: Technically the member function 'Incrementer::increment' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    int increment(int a);
+        ^
+src/incrementer.cpp:3:18: note: Technically the member function 'Incrementer::increment' can be static (but you may consider moving to unnamed namespace).
+int Incrementer::increment(int a){
+                 ^
+src/headers/incrementer.h:5:9: note: Technically the member function 'Incrementer::increment' can be static (but you may consider moving to unnamed namespace).
+    int increment(int a);
+        ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
